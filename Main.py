@@ -11,12 +11,22 @@ class Queue:
 
   def enqueue(self, data) -> None:
     # Write your code here
+    new = Node(data)
 
   def dequeue(self) -> None:
     # Write your code here
+    if not self.head is None:
+      self.head = self.head.next
+      if self.head is None:
+        self.tail = None
+    
 
   def status(self) -> None:
     # Write your code here
+    if not self.head is None:
+      self.head = self.head.next
+      if self.head is None:
+        self.tail = None
 
 
 # Do not change the following code
